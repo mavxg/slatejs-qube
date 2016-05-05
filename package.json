@@ -1,0 +1,32 @@
+{
+  "name": "slatejs-qube",
+  "version": "1.0.0",
+  "description": "Qube plugin for SlateJS editor",
+  "main": "qube.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavxg/slatejs-qube.git"
+  },
+  "keywords": [
+    "Qube",
+    "SlateJS",
+    "Hypercube",
+    "Spreadsheet"
+  ],
+  "author": "Benjamin Thomas Norrington",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/mavxg/slatejs-qube/issues"
+  },
+  "dependencies": {
+    "filesaver.js": "^0.2.0",
+    "friar": "git://github.com/mavxg/friar"
+  },
+  "peerDependencies": {
+    "qube": "git://github.com/mavxg/qube"
+  },
+  "homepage": "https://github.com/mavxg/slatejs-qube#readme"
+}
