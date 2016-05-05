@@ -26,6 +26,7 @@
     "friar": "git://github.com/mavxg/friar"
   },
   "peerDependencies": {
+    "slatejs": "git://github.com/mavxg/slatejs",
     "qube": "git://github.com/mavxg/qube"
   },
   "homepage": "https://github.com/mavxg/slatejs-qube#readme"
