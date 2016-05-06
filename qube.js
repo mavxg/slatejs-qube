@@ -998,7 +998,7 @@ var keymap = [
 		context:[
 			{key:"head", operator:"in", operand:["include","import"], match_all:true}
 		]},
-	{keys:["esc"], command:"recalculate"},
+	{keys:["esc"], command:"recalculate", args:{force:true}},
 ];
 
 var functions = {
@@ -1068,8 +1068,9 @@ functions.Cache.isMacro = true;
 			editor.apply(ops);
 		}
 	
-		function recalculate() {
+		function recalculate(args) {
 			console.log('recalculate');
+			if (args && args.force) qube.dirty = true;
 			expressions = editor.document().qube_expressions();
 			replace_results(qube.merge(expressions));
 			dirty = false;
